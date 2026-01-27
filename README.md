@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Cinefy 🎬
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Cinefy** is a modern, minimal movie tracking application built with React. It allows users to search for movies, view details, and track their watched list with personal ratings.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- **Search Movies**: Real-time search using the OMDb API.
+- **Movie Details**: View plot, cast, director, and ratings.
+- **Watch List**: Add movies to your personal watched list.
+- **Rating System**: Rate movies and track your user score vs. IMDb.
+- **Stats Summary**: See total watched time and average ratings.
+- **Persistent Data**: Your watched list is saved locally in your browser.
+- **Dark Mode UI**: A sleek, "Slate & Violet" glassmorphism interface.
 
-### `npm start`
+## 🚀 Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js installed
+- An API Key from [OMDb API](http://www.omdbapi.com/apikey.aspx) (Free)
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/cinefy.git
+    cd cinefy
+    ```
 
-### `npm run build`
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3.  **Configure API Key**
+    Create a `.env.local` file in the root directory and add your OMDb API key:
+    ```env
+    REACT_APP_OMDB_KEY=your_api_key_here
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4.  **Start the app**
+    ```bash
+    npm start
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Built With
 
-### `npm run eject`
+- **React 18** - UI Library
+- **CSS3** - Custom styling (Variables, Flexbox, Grid, Glassmorphism)
+- **OMDb API** - Movie Data
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Build for Production
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To create a production-ready build:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This creates a `build` folder with optimized static assets ready for deployment (e.g., Vercel, Netlify).
