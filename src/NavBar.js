@@ -8,7 +8,22 @@ export default function NavBar({ children }) {
 export function Logo() {
   return (
     <div className="logo">
-      <span>🎬</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M6 9H18L16 22H8L6 9Z" />
+        <circle cx="8" cy="6" r="2" />
+        <circle cx="12" cy="5" r="2" />
+        <circle cx="16" cy="6" r="2" />
+      </svg>
       <h1>Cinefy</h1>
     </div>
   );
