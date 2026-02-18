@@ -28,8 +28,10 @@ export function useMovies(query, handleCloseMovie, Key) {
           { signal: controller.signal },
         );
 
-        if (!res.ok)
+        if (!res.ok) {
+          if (res.status === 401) throw new Error("Invalid API Key. Please check your environment variables.");
           throw new Error("Something went wrong with fetching movies");
+        }
 
         const data = await res.json();
         if (data.Response === "False") throw new Error(data.Error);

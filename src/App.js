@@ -11,6 +11,10 @@ import WatchedList from "./WatchedList";
 
 const Key = process.env.REACT_APP_OMDB_KEY;
 
+if (!Key) {
+  console.warn("OMDb API Key is missing. Please set REACT_APP_OMDB_KEY in your environment variables.");
+}
+
 export default function App() {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState(null);
